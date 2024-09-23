@@ -1,1 +1,49 @@
-/* место для вашего кода */
+/* Добавить стили для шапки, меню, лого */
+.header {
+  display: grid;
+  grid-template-columns: 1fr 148px 1fr;
+  grid-template-rows: 105px;
+  align-items: center;
+  justify-items: center;
+  padding: 92px 24px 96px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.header_menu {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.header__links-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: circle;
+  gap: 35px;
+}
+
+.header__links-list-item_no-bullit,
+.header__link_active {
+  list-style: none;
+  text-decoration: none;
+}
+
+.header__links-list-item {
+  border-bottom: 1px solid #000;
+}
+
+.header__link {
+  text-decoration: none;
+}
+
+.header__logo {
+  display: block;
+
+  width: 129px;
+}
+
+.header__logo-image {
+  /* настроить логотип */
+  width: 100%;
+}
