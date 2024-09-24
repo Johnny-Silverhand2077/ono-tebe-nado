@@ -1,26 +1,32 @@
 /* Добавить стили для шапки, меню, лого */
 .header {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 148px 1fr;
   grid-template-rows: 105px;
-  align-items: center;
-  justify-items: center;
-  padding: 92px 24px 96px;
+  padding: 92px 50px 96px;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: 400;
+  
 }
 
 .header_menu {
-  display: flex;
-  flex-wrap: nowrap;
+  display: grid;
+  align-content: center;
+  
 }
 
 .header__links-list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  gap: 32px;
   list-style: circle;
-  gap: 35px;
+  text-align: center;
+  text-transform: lowercase;
+  letter-spacing: 0.01em;
+  line-height: 21px;
+  text-wrap: nowrap;
 }
 
 .header__links-list-item_no-bullit,
@@ -38,12 +44,57 @@
 }
 
 .header__logo {
-  display: block;
+  
+  display: grid;
+  align-content: start;
+  justify-items: center;
+  width: 100%;
+  height: 100%;
 
-  width: 129px;
 }
 
 .header__logo-image {
-  /* настроить логотип */
-  width: 100%;
+  width: 135px;
+  height: 104px;
+}
+
+.address {
+
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  justify-content: start;
+  font-style: normal;
+  max-width: 100%;
+  padding: 5px 0 2px;
+}
+
+.header_address {
+  display: grid;
+  align-content: space-between;
+  justify-content: start;
+  text-decoration: none;
+  text-align: left;
+  letter-spacing: 0.01em;
+
+}
+ 
+.header_address__undeline {
+  border-bottom: 1px solid #000;
+}
+
+.header_address:nth-child(1) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.header_address:nth-child(2) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.header_address:nth-child(3) {
+  grid-column: 2;
+  grid-row: 3;
+  
+
 }
