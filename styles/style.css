@@ -1,10 +1,8 @@
 * {
   scroll-behavior: smooth;
-
 }
 
 .header {
-
   position: relative;
   display: grid;
   grid-template-columns: 1fr 148px 1fr;
@@ -28,15 +26,10 @@
   gap: 31px;
   list-style: circle;
   line-height: 21.13px;
- 
 }
-
-
-
 
 .header__links-list-item_no-bullit {
   list-style: none;
- 
 }
 
 .header__link_active {
@@ -50,11 +43,10 @@
   opacity: 0.5;
   transition: 0.5s ease;
 }
+
 .header__link_active:not(:hover) {
   transition: 0.5s ease;
 }
-
-
 
 .header__links-list-item {
   text-decoration: underline;
@@ -68,6 +60,7 @@
   transition: 0.5s ease;
   text-underline-offset: 5px;
 }
+
 .header__links-list-item:not(:hover) {
   transition: 0.5s ease;
 }
@@ -78,10 +71,8 @@
   letter-spacing: 0.01em;
   text-wrap: nowrap;
   text-decoration: none;
-  transition: all; 
-  
+  transition: all;
 }
-
 
 .header__logo {
   display: block;
@@ -251,6 +242,7 @@
 
   transition: 0.4s ease;
 }
+
 .bet-button:not(:hover) {
   transition: 0.4s ease;
 }
@@ -306,12 +298,14 @@
   text-wrap: wrap;
   transition-delay: all;
 }
+
 .card:hover {
   transition: 0.4s ease;
   background-position: left;
   color: #fff;
   opacity: 0.8;
 }
+
 .card:not(:hover) {
   transition: 0.4s ease;
 }
@@ -404,7 +398,6 @@
   display: flex;
   flex-direction: column;
   gap: 100px;
-
   padding: 136px 0 13px;
 }
 
@@ -518,7 +511,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 50px;
   height: 50px;
 }
