@@ -6,7 +6,6 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr 148px 1fr;
-  grid-template-rows: 105px;
   padding: 92px 24px 96px;
   font-size: 18px;
   font-weight: 400;
@@ -145,8 +144,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 165px 50px 0px 50px;
-  height: 757px;
+  padding: 165px 50px 45px 50px;
 }
 
 .overlay {
@@ -154,8 +152,7 @@
   flex-shrink: 0;
   flex-wrap: wrap;
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   z-index: 0;
   background-color: #000;
   opacity: 0.6;
@@ -223,6 +220,7 @@
 .bet-button {
   background: transparent;
   flex-shrink: 0;
+  font-family: Raleway, sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 1.5;
@@ -254,7 +252,7 @@
 
 .lots {
   min-width: 1052px;
-  min-height: 692px;
+  padding-bottom: 1px;
   margin: 180px 24px 0px;
   color: #000;
 }
@@ -288,15 +286,14 @@
 
 .card {
   position: relative;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 334px;
-  height: 563px;
+  min-height: 563px;
   padding: 50px 40px 48px;
   text-wrap: wrap;
-  transition-delay: all;
+  transition: all;
 }
 
 .card:hover {
@@ -334,21 +331,15 @@
 }
 
 .card_type_film {
-  background-position: center;
-  background-size: cover;
-  background-image: url(../images/card-lot-01.jpg);
+  background: url(../images/card-lot-01.jpg) center / cover;
 }
 
 .card_type_book {
-  background-position: center;
-  background-size: cover;
-  background-image: url(../images/card-lot-02.jpg);
+  background: url(../images/card-lot-02.jpg) center / cover;
 }
 
 .card_type_picture {
-  background-position: center;
-  background-size: cover;
-  background-image: url(../images/card-lot-03.jpg);
+  background: url(../images/card-lot-03.jpg) center / cover;
 }
 
 .lots__look-more-link {
@@ -374,7 +365,7 @@
 
   width: 1052px;
 
-  margin: 146px 24px 0px;
+  margin: 146px 24px 1px;
 }
 
 .about__logo {
@@ -418,20 +409,13 @@
 }
 
 .about__text {
+  display: flex;
   color: #000;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.1px;
   text-align: start;
-}
-
-.about__text-top {
-  padding-right: 5px;
-  letter-spacing: 0.1px;
-}
-.letter-spacing-extended-text {
-  letter-spacing: -0.03px;
 }
 
 .footer {
@@ -443,8 +427,7 @@
 
 .footer__address {
   list-style: none;
-  width: 240.52px;
-  height: 98px;
+  max-width: 240.52px;
 }
 
 .footer__links-list-item_address {
